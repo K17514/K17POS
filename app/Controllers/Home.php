@@ -92,7 +92,7 @@ class Home extends BaseController
     $isOnline = $this->request->getPost('is_online');
     
         if ($isOnline == "1") {
-    $recaptcha_secret = "6LeZQekqAAAAAIk1nT3Xbz4KcKFyZ4Uk51w8m1b4"; // Replace with your actual secret key
+    $recaptcha_secret = ""; // Replace with your actual secret key
     $recaptcha_response = $_POST['g-recaptcha-response'];
 
     // Verify with Google
@@ -268,12 +268,12 @@ public function forgot_password()
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';   // Your SMTP server
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'ryukusune@gmail.com';  // Your email
-        $mail->Password   = 'wfsa qhmt mvrg tvwu';    // App password (NOT your real email password)
+        $mail->Username   = '@gmail.com';  // Your email
+        $mail->Password   = '';    // App password (NOT your real email password)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
         $mail->Port       = 587; 
 
-        $mail->setFrom('ryukusune@gmail.com', 'Chibi-Tee Exam Website');
+        $mail->setFrom('', '');
         $mail->addAddress($email);
 
         $mail->isHTML(true);
