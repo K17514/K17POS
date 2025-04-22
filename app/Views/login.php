@@ -151,7 +151,7 @@ button:hover{
           <a href="<?= base_url('/home/forgorpass') ?>">Forgot password?</a>
         </div>
 
-        <div class="g-recaptcha" data-sitekey="6LeZQekqAAAAAPiNKQ3qaP5Rr-UrphqwjW894Am2" id="gCaptcha"></div>
+        <div class="g-recaptcha" data-sitekey="" id="gCaptcha"></div>
 
          <div class="mb-3" id="math-captcha">
                       <label for="captcha_jawaban" class="form-extras">Berapakah hasil dari <?= $soal_captcha ?>?</label>
